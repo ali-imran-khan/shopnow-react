@@ -1,0 +1,106 @@
+.navbar {
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  right: 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 999; 
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: transparent;
+  justify-content: space-between;
+  margin-right: 10px;
+  border:none;
+  position: relative; 
+  transition: 0.3s ease; 
+}
+
+.button:hover{
+  color: black;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px; 
+  background-color: #ff002b; 
+  transform: scaleX(0); 
+  transform-origin: bottom;
+  transition: transform 0.3s ease; 
+}
+
+.button:hover::after {
+  transform: scaleX(0.8); 
+}
+
+.brand{
+  margin-right:14rem;
+  text-decoration: solid;
+  color:white;
+}
+
+
+.like{
+display: inline-block;
+padding: 10px 20px;
+color: #ffffff;
+margin-right: 5rem;
+text-decoration: none;
+position: relative; 
+transition: 0.3s ease; 
+
+}
+
+.logo {
+margin-left: 5rem;
+justify-content: center;
+align-items: center;
+margin-top: 15px ;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo button {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+.logo button{
+border-radius: 1rem;
+justify-content: space-between;
+margin-right: 3px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .before {
+    display: none;
+  }
+
+  .after {
+    display: none;
+  }
+  .menu-button {
+    display: block; 
+  }
+}
